@@ -72,19 +72,19 @@ Design the system for future scalability, simulating data fetching from multiple
 
 Need to install dependencies and run both server and client separately from their root folders.
 
-- Clone repo.
+Clone repo.
 
-- ```sh
+```sh
+cd client-crypto-dashboard
+npm install
+npm run dev
+```
 
-     cd client-crypto-dashboard
-     npm install
-     npm run dev```
-
-- ```sh
-
-     cd server-crypto-dashboard
-     npm install
-     npm run dev```
+```sh
+cd server-crypto-dashboard
+npm install
+npm run dev
+```
 
 ## Dev log
 
