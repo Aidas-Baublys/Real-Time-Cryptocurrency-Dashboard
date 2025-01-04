@@ -2,7 +2,7 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 
-import './App.css';
+import './app.css';
 
 function App() {
   const [message, setMessage] = useState('');
@@ -11,6 +11,9 @@ function App() {
 
   ws.onmessage = event => {
     const msg = JSON.parse(event.data);
+
+    console.log('🚀 ~ App ~ msg:', msg);
+
     setMessage(msg.p);
   };
 
@@ -26,6 +29,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className='card'>
+        {/* <Chart /> */}
         <div>{message}</div>
       </div>
       <p className='read-the-docs'>Click on the Vite and React logos to learn more</p>
